@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import Card from "../components/Card.astro";
+---
+
+<!-- Esto encima contiene a mi codigo javascript -->
+<Layout title="Welcome to Astro.">
+  <main>
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+        Hey, soy aran dev <a
+          href="https://www.linkedin.com/in/midudev"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </h1>
+      <h2 class="text-xl opacity-80">
+        +15 años de experiencia. Desarrollador Web Fullstack y creador de
+        contenido. De Barcelona, España 😉 Especializado en crear aplicaciones
+        únicas
+      </h2>
+    </section>
+  </main>
+</Layout>

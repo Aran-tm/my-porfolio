@@ -1,0 +1,41 @@
+---
+// esto es para importar los componentes dentro del layout
+import Header from "../components/Header.astro"; // este es el header
+import "@fontsource-variable/onest"; // esta es la fuente
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Header />
+    <slot />
+  </body>
+  <style is:global>
+    :root {
+      color-scheme: light dark; /* esto es para el modo oscuro claro */
+    }
+    html {
+      font-family: "Onest Variable", system-ui, sans-serif;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      background-color: #050505;
+      height: 100vh;
+    }
+  </style>
+</html>
