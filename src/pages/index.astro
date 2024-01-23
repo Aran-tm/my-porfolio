@@ -2,12 +2,18 @@
 import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
 import Card from "../components/Card.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
 ---
 
 <!-- Esto encima contiene a mi codigo javascript -->
 <Layout title="Welcome to Astro.">
   <main>
     <section class="w-full lg:w-[740px] mx-auto py-44">
+      <img
+        class="rounded-full w-12 h-12 mb-4"
+        src="../../public/profile.jpg"
+        alt="aran photo"
+      />
       <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
         Hey, soy aran dev <a
           href="https://www.linkedin.com/in/midudev"
@@ -18,11 +24,22 @@ import Card from "../components/Card.astro";
           <Badge>Disponible para trabajar</Badge>
         </a>
       </h1>
-      <h2 class="text-xl opacity-80">
-        +15 años de experiencia. Desarrollador Web Fullstack y creador de
-        contenido. De Barcelona, España 😉 Especializado en crear aplicaciones
-        únicas
+      <h2 class="text-2xl text-wrap">
+        <span>+15 años de experiencia.</span>
+        <span class="text-yellow-200/90"
+          >Desarrollador Web Fullstack y creador de contenido.
+        </span><span class="text-red-200/90">De Barcelona, España 😉</span> Especializado
+        en crear aplicaciones únicas
       </h2>
+
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/midudev" target="_blank">
+            <LinkedInIcon />
+            LinkedIn</a
+          >
+        </li>
+      </ul>
     </section>
   </main>
 </Layout>
