@@ -9,6 +9,8 @@ import GitHubIcon from "../components/icons/GitHub.astro";
 import GmailIcon from "../components/icons/Gmail.astro";
 import Experience from "../components/Experience.astro";
 import Briefcase from "../components/icons/Briefcase.astro";
+import CodeIcon from "../components/icons/Code.astro";
+import ProjectsSection from "../components/Projects.astro";
 ---
 
 <!-- Esto encima contiene a mi codigo javascript -->
@@ -17,7 +19,7 @@ import Briefcase from "../components/icons/Briefcase.astro";
   description="Contrata a Aran Dev"
 >
   <main class="px-6">
-    <SectionContainer class="py-44 pb-24">
+    <SectionContainer class="py-44 pb-32">
       <img
         class="rounded-full size-12 mb-4"
         src="../../public/profile.jpg"
@@ -68,12 +70,20 @@ import Briefcase from "../components/icons/Briefcase.astro";
     </SectionContainer>
 
     <!-- De esta forma se puede enrutar con Astro -->
-    <SectionContainer id="experiencia" class="">
+    <SectionContainer id="experiencia" class="mb-6">
       <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
         <Briefcase class="size-7" />
         Experiencia Laboral
       </h2>
       <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="experiencia" class="px-1">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+        <CodeIcon class="size-7" />
+        Proyectos
+      </h2>
+      <ProjectsSection />
     </SectionContainer>
   </main>
 </Layout>
