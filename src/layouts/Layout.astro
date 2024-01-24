@@ -1,6 +1,7 @@
 ---
 // esto es para importar los componentes dentro del layout
 import Header from "../components/Header.astro"; // este es el header
+import Footer from "../components/Footer.astro"; // este es el header
 import "@fontsource-variable/onest"; // esta es la fuente
 
 interface Props {
@@ -28,6 +29,7 @@ const { title } = Astro.props;
     </div>
     <Header />
     <slot />
+    <Footer />
   </body>
 </html>
 
