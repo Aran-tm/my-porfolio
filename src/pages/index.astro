@@ -1,16 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
-import Card from "../components/Card.astro";
+import SocialPill from "../components/SocialPill.astro";
 import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import InstagramIcon from "../components/icons/InstagramIcon.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import GmailIcon from "../components/icons/Gmail.astro";
 ---
 
 <!-- Esto encima contiene a mi codigo javascript -->
-<Layout title="Welcome to Astro.">
+<Layout
+  title="Porfolio de Aran Dev - Desarrollador y Programador Web."
+  description="Contrata a Aran Dev"
+>
   <main>
     <section class="w-full lg:w-[740px] mx-auto py-44">
       <img
-        class="rounded-full w-12 h-12 mb-4"
+        class="rounded-full size-12 mb-4"
         src="../../public/profile.jpg"
         alt="aran photo"
       />
@@ -32,14 +38,26 @@ import LinkedInIcon from "../components/icons/LinkedIn.astro";
         en crear aplicaciones únicas
       </h2>
 
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/midudev" target="_blank">
-            <LinkedInIcon class="w-6 h-6" />
-            LinkedIn</a
-          >
-        </li>
-      </ul>
+      <nav class="flex gap-x-4 mt-6">
+        <SocialPill href="https://www.linkedin.com/in/midudev">
+          <LinkedInIcon class="w-6 h-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/Aran-tm">
+          <GitHubIcon class="w-6 h-6" />
+          GitHub
+        </SocialPill>
+        <SocialPill
+          href="https://www.instagram.com/armando_rtm?igsh=ODRpazRhMnFmYnpz"
+        >
+          <InstagramIcon class="w-6 h-6" />
+          Instagram
+        </SocialPill>
+        <SocialPill href="">
+          <GmailIcon class="w-6 h-6" />
+          armandortmontes@gmail.com
+        </SocialPill>
+      </nav>
     </section>
   </main>
 </Layout>
