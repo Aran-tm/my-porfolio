@@ -16,14 +16,16 @@ import Briefcase from "../components/icons/Briefcase.astro";
   title="Porfolio de Aran Dev - Desarrollador y Programador Web."
   description="Contrata a Aran Dev"
 >
-  <main>
+  <main class="px-6">
     <SectionContainer class="py-44 pb-24">
       <img
         class="rounded-full size-12 mb-4"
         src="../../public/profile.jpg"
         alt="aran photo"
       />
-      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+      <h1
+        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+      >
         Hey, soy aran dev <a
           href="https://www.linkedin.com/in/midudev"
           target="_blank"
@@ -33,7 +35,7 @@ import Briefcase from "../components/icons/Briefcase.astro";
           <Badge>Disponible para trabajar</Badge>
         </a>
       </h1>
-      <h2 class="text-2xl text-wrap">
+      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
         <span>+15 años de experiencia.</span>
         <span class="text-yellow-200/90"
           >Desarrollador Web Fullstack y creador de contenido.
@@ -41,19 +43,19 @@ import Briefcase from "../components/icons/Briefcase.astro";
         en crear aplicaciones únicas
       </h2>
 
-      <nav class="flex gap-x-4 mt-6">
+      <nav class="flex gap-4 mt-6 flex-wrap">
         <SocialPill href="https://www.linkedin.com/in/midudev">
-          <LinkedInIcon class="w-6 h-6" />
+          <LinkedInIcon class="w-4 h-4 md:w-6 md:h-6" />
           LinkedIn
         </SocialPill>
         <SocialPill href="https://github.com/Aran-tm">
-          <GitHubIcon class="w-6 h-6" />
+          <GitHubIcon class="w-4 h-4 md:w-6 md:h-6" />
           GitHub
         </SocialPill>
         <SocialPill
           href="https://www.instagram.com/armando_rtm?igsh=ODRpazRhMnFmYnpz"
         >
-          <InstagramIcon class="w-6 h-6" />
+          <InstagramIcon class="w-4 h-4 md:w-6 md:h-6" />
           Instagram
         </SocialPill>
         <SocialPill href="mailto:armandortmontes@gmail.com">
