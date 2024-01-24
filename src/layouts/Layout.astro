@@ -29,18 +29,27 @@ const { title } = Astro.props;
     <Header />
     <slot />
   </body>
-  <style is:global>
-    :root {
-      color-scheme: light dark; /* esto es para el modo oscuro claro */
-    }
-    html {
-      font-family: "Onest Variable", system-ui, sans-serif;
-    }
-    body {
-      display: flex;
-      flex-direction: column;
-      background-color: #050505;
-      min-height: 100vh;
-    }
-  </style>
 </html>
+
+<style is:global>
+  :root {
+    color-scheme: light dark; /* esto es para el modo oscuro claro */
+  }
+  html {
+    font-family: "Onest Variable", system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: #050505;
+    min-height: 100vh;
+  }
+
+  /* Desactiva las animaciones en caso de que el usuario las desactive */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+</style>
